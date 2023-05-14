@@ -1,11 +1,8 @@
 import express from 'express'
-import jwt from 'jsonwebtoken'
 import mongoose from 'mongoose'
-import { validationResult } from "express-validator";
-import { registerValidation } from "./validations/register.js";
-import UserModel from "./models/User.js"
-import bcrypt from 'bcrypt'
-import { authValidation } from "./validations/auth.js";
+import {registerValidation} from "./validations/register.js";
+import {UserController} from "./controllers/UserController.js";
+import {authValidation} from "./validations/auth.js";
 import checkAuth from "./utils/checkAuth.js";
 
 mongoose
