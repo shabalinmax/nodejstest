@@ -9,7 +9,7 @@ import { authValidation } from "./validations/auth.js";
 import checkAuth from "./utils/checkAuth.js";
 
 mongoose
-    .connect('mongodb+srv://admin:12345@cluster0.kqdgxa3.mongodb.net/blog?retryWrites=true&w=majority')
+    .connect('mongodb+srv://admin:password@cluster0.kqdgxa3.mongodb.net/blog?retryWrites=true&w=majority')
     .then(() => console.log('Connected!'))
     .catch((err) => console.log('error', err))
 
